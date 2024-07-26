@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <div style="display: flex;">
+        <a href="{{ url_for('home') }}" style="display: inline-block;">
+            <img src="/static/images/askw.png" style="margin-top: 3%; margin-left: -2%;" alt="askVIT" class="logo">
+        </a>
+        <div class="button3">
+            <a href="{{ url_for('home') }}" class="button1" style="text-decoration: none;">AI</a>
+            <a href="{{ url_for('ask') }}" class="button1" style="text-decoration: none;">Ask</a>
+            <a href="{{ url_for('recomend') }}" class="button1" style="text-decoration: none;">Recommend</a>
+        </div>
+    </div>
+
+    <div class="recomend-cards">
+        <div class="recomend-cards-content">What are the best food places near VIT?</div>
+        <button class="reply-button" onclick="toggleAnswerSection(this)">Reply</button>
+        <div class="answer-section">
+            <textarea style="max-height: 40px;" placeholder="Type your answer here..."></textarea>
+            <button class="send-button" onclick="sendReply(this)">Send</button>
+        </div>
+        <button class="dropdown-button" onclick="toggleDropdown(this)">Show Replies</button>
+        <div class="dropdown-content">
+            <div class="reply-list" id="replyList1">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="recomend-cards">
+        <div class="recomend-cards-content">How is the faculty Mohan CS for theory of science?</div>
+        <button class="reply-button" onclick="toggleAnswerSection(this)">Reply</button>
+        <div class="answer-section">
+            <textarea style="max-height: 40px;" placeholder="Type your answer here..."></textarea>
+            <button class="send-button" onclick="sendReply(this)">Send</button>
+        </div>
+        <button class="dropdown-button" onclick="toggleDropdown(this)">Show Replies</button>
+        <div class="dropdown-content">
+            <div class="reply-list" id="replyList2">
+    
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <script>
+
+function toggleAnswerSection(button) {
+            const answerSection = button.nextElementSibling;
+            if (answerSection.style.display === 'none' || answerSection.style.display === '') {
+                answerSection.style.display = 'block';
+            } else {
+                answerSection.style.display = 'none';
+            }
+        }
+
+        function sendReply(button) {
+    const textarea = button.previousElementSibling;
+    const replyText = textarea.value.trim();
+    if (replyText) {
+        const replyList = button.closest('.recomend-cards').querySelector('.reply-list');
+        const replyItem = document.createElement('div');
+        replyItem.className = 'reply-item';
+
+        // Create reply content without profile circle
+        const replyContent = document.createElement('div');
+        replyContent.className = 'reply-text';
+        replyContent.innerHTML = `<strong style="color: #063d91;">Anonymous:</strong> ${replyText}`;
+
+        replyItem.appendChild(replyContent);
+        replyList.appendChild(replyItem);
+        
+        textarea.value = ''; // Clear the textarea
+    }
+}
+
+
+        function toggleDropdown(button) {
+            const dropdownContent = button.nextElementSibling;
+            if (dropdownContent.style.display === 'none' || dropdownContent.style.display === '') {
+                dropdownContent.style.display = 'block';
+            } else {
+                dropdownContent.style.display = 'none';
+            }
+        }
+
+        // document.querySelectorAll('.reply-button').forEach(button => {
+        //     button.addEventListener('click', function() {
+        //         const answerSection = this.nextElementSibling;
+        //         if (answerSection.style.display === 'none' || answerSection.style.display === '') {
+        //             answerSection.style.display = 'block';
+        //         } else {
+        //             answerSection.style.display = 'none';
+        //         }
+        //     });
+        // });
+
+
+
+
+// ---------------------------------------------------------------------------------------
+    //     document.addEventListener("DOMContentLoaded", function() {
+    //         var typed = new Typed(".typing-text", {
+    //             strings: [
+    //                 "FACULTY REVIEWS",
+    //                 "BEST RESTAURANTS",
+    //                 "FFCS GUIDE",
+    //                 "CHILL OUT PLACES",
+    //                 "HOSTELS",
+    //                 "FOOD",
+    //                 "CAMPUS",
+    //                 "FACULTY REVIEWS",
+    //                 "ACADEMICS"
+    //             ],
+    //             loop: true,
+    //             typeSpeed: 55,
+    //             backSpeed: 25,
+    //             backDelay: 500,
+    //         });
+    //     });
+
+    //     function sendMessage() {
+    //         const userInput = document.getElementById("user-input").value.trim();
+    //         if (!userInput) return;
+
+    //         const userMessageElement = document.createElement("div");
+    //         userMessageElement.className = "message user";
+    //         userMessageElement.textContent = `You: ${userInput}`;
+    //         document.getElementById("chat-messages").appendChild(userMessageElement);
+
+    //         fetch("/get", {
+    //             method: "POST",
+    //             headers: {
+    //                 "Content-Type": "application/json"
+    //             },
+    //             body: JSON.stringify({ msg: userInput })
+    //         })
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             const botMessageElement = document.createElement("div");
+    //             botMessageElement.className = "message bot";
+
+    //             const responseText = data.response;
+
+    //             function linkify(text) {
+    //                 return text.replace(/(https?:\/\/[^\s]+)/g, url => `<a href="${url}" target="_blank">${url}</a>`);
+    //             }
+
+    //             const bulletPoints = linkify(responseText).split('\n').map(item => `<li>${item}</li>`).join('');
+    //             botMessageElement.innerHTML = `${data.bot_name}: <ul>${bulletPoints}</ul>`;
+                
+    //             document.getElementById("chat-messages").appendChild(botMessageElement);
+    //             document.getElementById("chat-messages").scrollTop = document.getElementById("chat-messages").scrollHeight;
+    //         })
+    //         .catch(error => console.error("Error:", error));
+
+    //         document.getElementById("user-input").value = "";
+    //     }
+
+
+    //     let currentSlide = 0;
+    //     const slides = document.querySelector('.slides');
+    //     const totalSlides = slides.children.length;
+    //     const slideWidth = slides.children[0].offsetWidth + 30; // Including margin
+
+    //     function changeSlide(direction) {
+    //         currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    //         slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    //     }
+
+    //     function autoSlide() {
+    //         changeSlide(1);
+    //     }
+
+    //     setInterval(autoSlide, 3000); // Change slide every 3 seconds
+
+
+    //     document.getElementById("user-input").addEventListener("keypress", function(event) {
+    //         if (event.key === "Enter") {
+    //             event.preventDefault();
+    //             sendMessage();
+    //         }
+    //     });
+
+    //     document.addEventListener("DOMContentLoaded", function() {
+    //     const slider = document.querySelector('.food-slider');
+    //     const clone = slider.innerHTML;
+    //     slider.innerHTML += clone;
+    // });
+    </script>
+    
+</body>
+</html>

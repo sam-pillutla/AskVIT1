@@ -1,0 +1,419 @@
+
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "Good morning",
+                "Good afternoon",
+                "Good evening",
+                "Hey there",
+                "How's it going?",
+                "What’s up?"
+            ],
+            "responses": [
+                "Hello! How can I assist you today? ",
+                "Hi there! What information do you need?",
+                "Greetings! How may I help you?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Goodbye",
+                "See you later",
+                "Bye",
+                "Take care",
+                "Catch you later",
+                "Have a nice day"
+            ],
+            "responses": [
+                "Goodbye! Have a great day!",
+                "See you later! Don't hesitate to return if you have more questions.",
+                "Bye! Feel free to come back if you need more help."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thank you",
+                "Thanks",
+                "I appreciate it",
+                "Much appreciated",
+                "Thanks a lot",
+                "I’m grateful"
+            ],
+            "responses": [
+                "You're welcome!",
+                "Happy to help!",
+                "Glad to assist!"
+            ]
+        },
+        {
+            "tag": "admissions",
+            "patterns": [
+                "How do I apply?",
+                "Admission process",
+                "How can I enroll?",
+                "How can I get admitted?",
+                "What’s the admission procedure?",
+                "Where do I start the application process?"
+            ],
+            "responses": [
+                "You can apply through our admissions page. The application process involves filling out an online form, submitting necessary documents, and appearing for an entrance exam if required. For more details, visit [VIT Admissions](https://vit.ac.in/admissions).",
+                "For admission details, visit our admissions section on the official website. It includes information on eligibility, entrance exams, and important dates. Check out [VIT Admissions](https://vit.ac.in/admissions) for more information."
+            ]
+        },
+        {
+            "tag": "courses",
+            "patterns": [
+                "What courses are offered?",
+                "Programs available",
+                "What can I study here?",
+                "What are the available courses?",
+                "What can I study here?",
+                "What programs are there?",
+                "courses in vit vellore",
+                "programs in vit vellore"
+            ],
+            "responses": [
+                "We offer a variety of undergraduate and postgraduate programs. Here are some of the undergraduate programs: \n\n**Undergraduate Programs:** \n1. B.Tech. in Biotechnology \n2. B.Tech. in Chemical Engineering \n3. B.Tech. in Civil Engineering \n4. B.Tech. in Computer Science and Engineering \n5. B.Tech. in Electrical and Electronics Engineering \n6. B.Tech. in Electronics and Communication Engineering \n7. B.Tech. in Mechanical Engineering \n8. B.Arch. \n9. B.Des. Industrial Design \n10. BBA \n11. BCA \n12. B.Com. \n13. B.Sc. in various disciplines \n\n**Postgraduate Programs:** \n1. M.Tech. in various specializations \n2. M.Sc. in Applied Microbiology, Biomedical Genetics, Business Statistics, Biotechnology, Chemistry, Data Science, Physics \n3. MCA \n4. MBA \n\nFor a full list of courses, visit [VIT Academics](https://vit.ac.in/academics).",
+                "Explore our wide range of undergraduate and postgraduate programs. Undergraduate programs include various B.Tech. specializations, B.Arch., B.Des., BBA, BCA, B.Com., and B.Sc. courses. Postgraduate programs include M.Tech., M.Sc., MCA, and MBA. For more details, check [VIT Academics](https://vit.ac.in/academics)."
+            ]
+        },
+        
+        {
+            "tag": "contact",
+            "patterns": [
+                "How can I contact the university?",
+                "Contact information",
+                "University phone number",
+                "How do I get in touch with VIT?",
+                "Where can I find contact details?",
+                "How to reach VIT Vellore?"
+            ],
+            "responses": [
+                "You can reach us through the contact page on our official website. It provides detailed contact information, including phone numbers and email addresses. Visit [VIT Contact Us](https://vit.ac.in/contactus) for more information.",
+                "Visit the contact us section on our website for our contact information, including phone numbers and email addresses. Here is the link: [VIT Contact Us](https://vit.ac.in/contactus)."
+            ]
+        },
+        {
+            "tag": "events",
+            "patterns": [
+                "Upcoming events",
+                "What's happening on campus?",
+                "University events",
+                "What events are scheduled?",
+                "Any campus events coming up?",
+                "What's on at VIT Vellore?"
+            ],
+            "responses": [
+                "You can find all upcoming events at [VIT Events](https://vit.ac.in/events).",
+                "Check out our events calendar at [VIT Events](https://vit.ac.in/events)."
+            ]
+        },
+        {
+            "tag": "placements",
+            "patterns": [
+                "Placement statistics",
+                "Job placements",
+                "Career opportunities",
+                "What are the placement records?",
+                "Job prospects for graduates",
+                "How are the job placements?",
+                "placements"
+            ],
+            "responses": [
+                "Our Career Development Center has excellent placement records. Visit [VIT CDC](https://vit.ac.in/cdc) for more details.",
+                "For placement information, check out [VIT CDC](https://vit.ac.in/cdc)."
+            ]
+        },
+        {
+            "tag": "campus_life",
+            "patterns": [
+                "What's campus life like?",
+                "Student activities",
+                "Campus facilities",
+                "Tell me about campus life",
+                "What’s available on campus?",
+                "Campus amenities"
+            ],
+            "responses": [
+                "Our campus offers a vibrant student life with various clubs, events, and facilities. Learn more at [VIT Campus Life](https://vit.ac.in/campuslife).",
+                "Discover more about campus life at [VIT Campus Life](https://vit.ac.in/campuslife)."
+            ]
+        },
+        {
+            "tag": "international_relations",
+            "patterns": [
+                "International programs",
+                "Study abroad opportunities",
+                "Foreign university partnerships",
+                "What international programs are available?",
+                "Study abroad options",
+                "Global collaborations"
+            ],
+            "responses": [
+                "We have partnerships with many foreign universities and offer various international programs. More info at [VIT International Relations](https://vit.ac.in/internationalrelations).",
+                "Explore international opportunities at [VIT International Relations](https://vit.ac.in/internationalrelations)."
+            ]
+        },
+        {
+            "tag": "course_details",
+            "patterns": [
+                "What courses are offered at Vellore campus?",
+                "List of courses at VIT Vellore",
+                "Programs available at VIT Vellore",
+                "What can I study at VIT Vellore?",
+                "Available courses at VIT",
+                "Undergraduate and postgraduate programs at VIT"
+            ],
+            "responses": [
+                "At VIT Vellore, we offer a variety of undergraduate and postgraduate programs. Here are some of the courses available:\n\n**Undergraduate Programs:**\n1. B.Tech. in Biotechnology\n2. B.Tech. in Chemical Engineering\n3. B.Tech. in Civil Engineering\n4. B.Tech. in Computer Science and Engineering (CSE)\n5. B.Tech. in Electrical and Electronics Engineering\n6. B.Tech. in Electronics and Communication Engineering\n7. B.Tech. in Mechanical Engineering\n8. B.Arch.\n9. B.Des. Industrial Design\n10. BBA\n11. BCA\n12. B.Com.\n13. B.Sc. in various disciplines\n\n**Postgraduate Programs:**\n1. M.Tech. in various specializations\n2. M.Sc. in Applied Microbiology, Biomedical Genetics, Business Statistics, Biotechnology, Chemistry, Data Science, Physics\n3. MCA\n4. MBA\n\nFor a full list of programs, visit [VIT Academics](https://vit.ac.in/academics)."
+            ]
+        },
+        {
+            "tag": "fees",
+            "patterns": [
+                "What are the campus fees?",
+                "Tuition fees at VIT Vellore",
+                "How much does it cost to study at VIT?",
+                "What is the fee structure?",
+                "Tuition and other charges",
+                "Campus fees details"
+            ],
+            "responses": [
+                "The tuition fees at VIT Vellore vary depending on the program. For undergraduate programs like B.Tech., the fees range from INR 1,73,000 to INR 1,95,000 per year. For postgraduate programs like M.Tech., the fees are approximately INR 1,58,000 per year. Additionally, there are other fees such as hostel and mess charges. For detailed information, visit [VIT Fees Structure](https://vit.ac.in/fee-structure).",
+                "Tuition fees at VIT Vellore vary by program. Undergraduate fees range from INR 1,73,000 to INR 1,95,000 per year for B.Tech. programs. Postgraduate fees for M.Tech. programs are around INR 1,58,000 per year. Other fees include hostel and mess charges. For more details, check out [VIT Fees Structure](https://vit.ac.in/fee-structure)."
+            ]
+        },
+        {
+            "tag": "address",
+            "patterns": [
+                "What is the address of VIT Vellore?",
+                "Location of VIT Vellore",
+                "VIT Vellore address",
+                "Where is VIT Vellore located?",
+                "Campus location",
+                "Address of the university"
+            ],
+            "responses": [
+                "The address of VIT Vellore is: \nVellore Institute of Technology, \nVellore - 632014, \nTamil Nadu, India. \nHere is the [Google Maps link](https://goo.gl/maps/bSvDoef13piD5F1n7) for the location."
+            ]
+        },
+        {
+            "tag": "area",
+            "patterns": [
+                "What is the area of VIT Vellore campus?",
+                "Size of VIT Vellore campus",
+                "Campus area of VIT Vellore",
+                "How big is the VIT campus?",
+                "Campus size",
+                "Total area of VIT Vellore"
+            ],
+            "responses": [
+                "The VIT Vellore campus spans over an area of 372 acres, providing ample space for academic buildings, hostels, and recreational facilities."
+            ]
+        },
+        {
+            "tag": "blogs",
+            "patterns": [
+                "Where can I find VIT Vellore's blogs?",
+                "VIT Vellore blog section",
+                "VIT Vellore latest blogs",
+                "VIT blog page",
+                "Read VIT blogs",
+                "VIT Vellore news and updates"
+            ],
+            "responses": [
+                "You can find VIT Vellore's blogs on their official [Blogs page](https://vit.ac.in/blogs)."
+            ]
+        },
+        {
+            "tag": "online_institute",
+            "patterns": [
+                "What is VITOL?",
+                "Online institute at VIT Vellore",
+                "VIT Vellore online learning",
+                "Information about VITOL",
+                "VITOL courses",
+                "VIT Online Institute details"
+            ],
+            "responses": [
+                "VITOL stands for VIT Online Institute. It offers various online programs and courses. For more information, visit the [VITOL page](https://vit.ac.in/vitol)."
+            ]
+        },
+        {
+            "tag": "examinations",
+            "patterns": [
+                "How can I find information about VIT Vellore examinations?",
+                "Controller of Examinations at VIT Vellore",
+                "VIT Vellore exam details",
+                "Examination information",
+                "Exam schedule and details",
+                "VIT examination updates"
+            ],
+            "responses": [
+                "For information regarding examinations at VIT Vellore, visit the [Controller of Examinations page](https://vit.ac.in/examinations)."
+            ]
+        },
+        {
+            "tag": "transcripts",
+            "patterns": [
+                "How can alumni get transcripts from VIT Vellore?",
+                "WES attestation VIT Vellore",
+                "Transcripts application process VIT Vellore",
+                "Request for transcripts",
+                "How to obtain transcripts?",
+                "Transcripts for alumni"
+            ],
+            "responses": [
+                "Alumni can request transcripts and WES attestation through the [Transcripts for Alumni page](https://vit.ac.in/transcripts)."
+            ]
+        },
+        {
+            "tag": "teaching_learning_centre",
+            "patterns": [
+                "What is the Teaching Learning Centre of Excellence?",
+                "VIT Vellore Teaching Learning Centre",
+                "Teaching Learning Centre services",
+                "Centre of Excellence details",
+                "Teaching Learning Centre functions",
+                "Teaching Learning Centre at VIT"
+            ],
+            "responses": [
+                "The Teaching Learning Centre of Excellence at VIT Vellore focuses on enhancing teaching and learning methodologies. More details can be found on the [Teaching Learning Centre page](https://vit.ac.in/teaching-learning-centre)."
+            ]
+        },
+        {
+            "tag": "vit_tbi",
+            "patterns": [
+                "What is VIT TBI?",
+                "VIT Vellore Technology Business Incubator",
+                "VIT TBI details",
+                "Technology Business Incubator at VIT",
+                "VIT TBI information",
+                "VIT Technology Business Incubator"
+            ],
+            "responses": [
+                "VIT TBI stands for VIT Technology Business Incubator, which supports startups and innovation. For more information, visit the [VIT TBI page](https://vit.ac.in/vit-tbi)."
+            ]
+        },
+        {
+            "tag": "parents",
+            "patterns": [
+                "How can parents log in?",
+                "Parent login VIT Vellore",
+                "Counselling division for parents",
+                "Parent access",
+                "How do parents access their account?",
+                "Parent services and login"
+            ],
+            "responses": [
+                "Parents can log in through the [Parent Login page](https://vit.ac.in/parents). For counseling and other services, visit the [Counselling Division page](https://vit.ac.in/counselling-division)."
+            ]
+        },
+        
+        {
+            "tag": "students",
+            "patterns": [
+                "How do VIT Vellore students access their email?",
+                "VIT Vellore student login",
+                "SBST Freshers App details"
+            ],
+            "responses": [
+                "Students can access their VIT Vellore email through [VIT Gmail](https://vit.ac.in/vit-gmail) and log in through the [Student Login page](https://vit.ac.in/student-login). More information about the SBST Freshers App can be found on the [SBST Freshers App page](https://vit.ac.in/sbst-freshers-app)."
+            ]
+        },
+        {
+            "tag": "alumni",
+            "patterns": [
+                "How can alumni access VITAA?",
+                "VIT Vellore alumni services",
+                "VIT Vellore Distinguished Alumni Awards"
+            ],
+            "responses": [
+                "Alumni can access services and information through the [VITAA Website](https://vit.ac.in/vitaa). For Distinguished Alumni Awards and other alumni-related services, visit the [Alumni page](https://vit.ac.in/alumni)."
+            ]
+        },
+        {
+            "tag": "campus_tour",
+            "patterns": [
+                "How can I book a campus tour at VIT Vellore?",
+                "VIT Vellore campus tour details",
+                "Schedule a visit to VIT Vellore"
+            ],
+            "responses": [
+                "To book a campus tour at VIT Vellore, visit the [Campus Tour page](https://vit.ac.in/campus-tour)."
+            ]
+        },
+        {
+            "tag": "rankings",
+            "patterns": [
+                "What are the latest rankings of VIT Vellore?",
+                "How is VIT Vellore ranked?",
+                "VIT Vellore rankings in national and international lists"
+            ],
+            "responses": [
+                "As of 2024:\n- **NIRF (National Institutional Ranking Framework)**: VIT Vellore is ranked 12th in the Engineering category and 18th overall in India.\n- **QS World University Rankings**: VIT Vellore is ranked in the 801-1000 range globally.\n- **Times Higher Education (THE) World University Rankings**: VIT Vellore is placed in the 601-800 range globally.\n- **The Week**: VIT Vellore is ranked 10th among engineering colleges in India.\n\nFor the most up-to-date information, please refer to the [official VIT Vellore website](https://vit.ac.in)."
+            ]
+        },
+
+        {
+            "tag": "hostel_fees_regular_blocks-MEN",
+            "patterns": [
+                "What are the hostel fees for R Block in VIT Vellore for 2024-25 MEN?",
+                "Fees for R Block hostels at VIT Vellore MEN",
+                "Hostel and mess fee details for R Block VIT Vellore MEN",
+                "Hostel fees",
+                "What are the hostel fees for S and T Blocks at VIT Vellore for 2024-25 MEN?",
+                "Fees for S and T Blocks hostels at VIT Vellore MEN",
+                "Hostel and mess fee details for S and T Blocks VIT Vellore MEN",
+                "Hostel fees",
+                "What are the hostel fees for Regular/NORMAL Blocks at VIT Vellore for 2024-25 MEN?",
+                "Fees for Regular/NORMAL Blocks hostels at VIT Vellore MEN",
+                "Hostel and mess fee details for Regular/NORMAL Blocks VIT Vellore MEN",
+                "Hostel fees",
+                "What are the hostel fees for NRI and foreign students in S and T Blocks at VIT Vellore for 2024-25 MEN?",
+                "Fees for NRI and foreign students in S and T Blocks MEN",
+                "Hostel and mess fee details for NRI and foreign students in S and T Blocks VIT Vellore MEN",
+                "Hostel fees",
+                "Hostel fees for all men's blocks?",
+                "All men's hostel fees at VIT?",
+                "Fees for every men's hostel block?",
+                "Men's hostel fees overview?",
+                "List all men's hostel fees",
+                "What are the hostel fees for NRI and foreign students in R Block at VIT Vellore for 2024-25 MEN?",
+                "Fees for NRI and foreign students in R Block MEN",
+                "Hostel and mess fee details for NRI and foreign students ,in R Block VIT Vellore MEN",
+                "Hostel fees",
+                "What are the hostel fees for Regular Blocks at VIT Vellore for 2024-25 MEN?",
+                "Fees for Regular Blocks hostels at VIT Vellore MEN",
+                "Hostel and mess fee details for Regular Blocks VIT Vellore MEN",
+                "Hostel fees?"
+            ],
+            "responses": [
+                "Here are the fees for all men's blocks at VIT Vellore for 2024-25:\n\nR Block:\n- 4 Apartment: Veg: ₹1,87,000, Non-Veg: ₹1,95,700, Special: ₹2,06,500\n- 3 Apartment: Veg: ₹1,96,900, Non-Veg: ₹2,05,600, Special: ₹2,16,400\n- 2 Apartment: Veg: ₹2,09,600, Non-Veg: ₹2,18,300, Special: ₹2,29,100\n\nS and T Blocks:\n- 6NAC: Veg: ₹1,03,700, Non-Veg: ₹1,12,400, Special: ₹1,23,200\n- 6AC: Veg: ₹1,26,900, Non-Veg: ₹1,35,600, Special: ₹1,46,400\n- 4NAC: Veg: ₹1,08,500, Non-Veg: ₹1,17,200, Special: ₹1,28,000\n- 4AC: Veg: ₹1,35,000, Non-Veg: ₹1,43,700, Special: ₹1,54,500\n- 3NAC: Veg: ₹1,14,800, Non-Veg: ₹1,23,500, Special: ₹1,34,300\n- 3AC: Veg: ₹1,47,300, Non-Veg: ₹1,56,000, Special: ₹1,66,800\n- 2NAC: Veg: ₹1,21,500, Non-Veg: ₹1,30,200, Special: ₹1,41,000\n- 2AC: Veg: ₹1,53,800, Non-Veg: ₹1,62,500, Special: ₹1,73,300\n- 1NAC: Veg: ₹1,38,600, Non-Veg: ₹1,47,300, Special: ₹1,58,100\n- 1AC: Veg: ₹1,86,100, Non-Veg: ₹1,94,800, Special: ₹2,05,600\n\nRegular Blocks:\n- 4AC: Veg: ₹1,56,000, Non-Veg: ₹1,64,700, Special: ₹1,75,500\n- 3AC: Veg: ₹1,70,500, Non-Veg: ₹1,79,200, Special: ₹1,90,000\n- 2AC: Veg: ₹1,84,100, Non-Veg: ₹1,92,800, Special: ₹2,03,600\n\nNRI and Foreign Students (S and T Blocks):\n- 4AC: $3,410\n- 3AC: $3,760\n- 2AC: $4,260\n\nNRI and Foreign Students (R Block):\n- 4 Apartment: $4,100\n- 3 Apartment: $4,390\n- 2 Apartment: $4,800"
+            ]
+        },
+        {
+            "tag": "places_near_vit",
+            "patterns": [
+                "Chill out places near VIT",
+                "Places to visit near VIT",
+                "Best places around VIT",
+                "What are some tourist spots near VIT?"
+            ],
+            "responses": [
+                "1. Vellore Fort - Distance: 9.2 km, Area: Vellore, Tamil Nadu\n2. Cup and Saucer Waterfalls - Distance: 15.6 km, Area: Vellore, Tamil Nadu\n3. Kanchangiri Hills - Distance: 15 km, Area: Vellore, Tamil Nadu\n4. Palamathi Hills - Distance: 12 km, Area: Vellore, Tamil Nadu\n5. Golden Temple - Distance: 21 km, Area: Vellore, Tamil Nadu\n6. Bans Resort - Distance: 38 km, Area: Chittoor, Andhra Pradesh\n7. Yelagiri Hills - Distance: 99 km, Area: Yelagiri, Tamil Nadu\n8. Horsley Hills - Distance: 150 km, Area: Madanapalle, Andhra Pradesh\n9. Nandi Hills - Distance: 220 km, Area: Bangalore, Karnataka\n10. Coorg - Distance: 444 km, Area: Kodagu, Karnataka\n11. Munnar - Distance: 500 km, Area: Munnar, Kerala\n12. Silverwood Resorts - Distance: 513 km, Area: Wayanad, Kerala"
+            ]
+        }
+        
+        
+        
+        
+    ]
+}
+

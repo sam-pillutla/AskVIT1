@@ -1,0 +1,38 @@
+{
+    "good": [
+        "Dr. John Smith",
+        "Prof. Emily Johnson",
+        "Dr. Robert Brown",
+        "Prof. Michael Williams",
+        "Dr. Mary Jones",
+        "Prof. David Garcia",
+        "Dr. Patricia Martinez",
+        "Prof. Jennifer Rodriguez",
+        "Dr. James Lee",
+        "Prof. Linda Harris"
+    ],
+    "average": [
+        "Dr. Barbara Clark",
+        "Prof. Richard Lewis",
+        "Dr. Thomas Robinson",
+        "Prof. Joseph Walker",
+        "Dr. Susan Hall",
+        "Prof. Daniel Allen",
+        "Dr. Nancy Young",
+        "Prof. Karen Hernandez",
+        "Dr. Mark King",
+        "Prof. Donna Wright"
+    ],
+    "strict": [
+        "Dr. Steven Scott",
+        "Prof. Paul Green",
+        "Dr. Sarah Adams",
+        "Prof. Kenneth Baker",
+        "Dr. Deborah Carter",
+        "Prof. George Phillips",
+        "Dr. Cynthia Campbell",
+        "Prof. Charles Mitchell",
+        "Dr. Jessica Parker",
+        "Prof. Anthony Evans"
+    ]
+}

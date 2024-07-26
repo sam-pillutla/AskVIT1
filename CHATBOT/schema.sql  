@@ -1,0 +1,13 @@
+CREATE TABLE questions (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    content TEXT NOT NULL,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE replies (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    question_id INTEGER,
+    content TEXT NOT NULL,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (question_id) REFERENCES questions (id)
+);
